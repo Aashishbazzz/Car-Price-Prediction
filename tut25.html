@@ -1,0 +1,55 @@
+<!-- /* TOPIC : POSITIONS IN HTML */ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSITIONS IN HTML</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: yellow;
+            height: 3444px;
+        }
+        /* CSS position : static(default),relative , absolute ,  fixed , sticky  */
+        .box {
+            display: inline-block;
+            /*el line me lelo , height , width set kr skte h*/
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+
+        #box3 {
+            /* relative : relative to its normal position (original position se khesakta h) and leave a gap to its normal position
+            position: relative;   */
+           
+            /* absolute : relative to its first parent position (parent position ke respect me khesakta h) */
+           
+           /* sidhi se bat h agr purani position me gap chahiye to relative else absolute*/
+            /*position: fixed; /* positions the element relative to its browser window kahin bhi shift kr skte h*/ 
+            /*bottom: 4px;
+            right: 4px;*/
+            
+            /*top: 100px;
+            left: 150px; */
+            
+            position: sticky;/*chipka ka chipka rhe jaye bas vertically move kra skte h we can use only top*/ 
+            bottom: 40px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">chat with us</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>
